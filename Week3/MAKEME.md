@@ -29,7 +29,7 @@ Provide feedback to the homework of last week to one of your fellow students. Yo
     - [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
 
 - Go through the topics of this week:
-    - Git work flow
+    - [Git work flow](https://github.com/HackYourFuture/Git/blob/master/Lecture-3.md)
     - [Advanced data types (Objects)](./../../../../fundamentals/blob/master/fundamentals/objects.md)
     - [Conditional execution](./../../../../fundamentals/blob/master/fundamentals/conditional_execution.md)
     - [Statements vs Expressions](./../../../../fundamentals/blob/master/fundamentals/statements_expressions.md)
@@ -54,16 +54,16 @@ Just watch the 2 min video, you do not have to do the entire JavaScript course (
 
 Go and try out this cool game: [roverjs.com](http://roverjs.com), written by one of our HYF teachers, Joost Lubach. There are different levels, see how far you can get!
 
-## Step 4: String and Array challenges
+## Step 4: String, Array and Loop challenges
 
 _Deadline Wednesday_
 
-> For all the following exercises create a new .js file. Try to find a proper name for each file or make a small comment about what it does inside for future reference
+> Create a `week3` folder in your repo `hyf-javascript1`. For each of the following exercises, create a new `.js` file in the `week3` folder with the file name as specified in parentheses in the exercise heading. Remember to start each file with `'use strict';`.
 
 *IMPORTANT NOTE*
 In each assignment write at least two `console.log` statements to verify if your code works correctly. In other words proof that you code works as expected. If you need inspiration look at the steps defined in the assignments from last week.
 
-1\. **Strings!**
+### Exercise 1 - Strings! (`strings.js`)
 
 Consider the following string:
 
@@ -76,7 +76,7 @@ let myString = "hello,this,is,a,difficult,to,read,sentence";
 1\.3 The commas make that the sentence is quite hard to read. Find a way to remove the commas from the string and replace them with spaces.<br />
 1\.4 Log `myString` to see if you succeeded.<br />
 
-2\. **Arrays!**
+### Exercise 2 - Arrays! (`arrays.js`)
 
 Consider the following array:
 
@@ -84,97 +84,265 @@ Consider the following array:
 let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
 ```
 
-2\.1 Add a statement that adds Mauro's favorite animal *'turtle'* to the existing array.<br />
-2\.2 Log your new array!<br />
-2\.3 Now add Jim's favorite animal to the array, it's *'meerkat'*, but make sure it will be placed after *'blowfish'* and before *'capricorn'*.<br />
-2\.4 Write a console.log statement that explains in words _you think_ the new value of the array is.<br />
-2\.5 Log your new array!<br />
-2\.6 Log the length of the array, add a message: *'The array has a length of: '* (here you should show the length of the array).<br />
-2\.7 Jason does not like *'giraffe'*, delete this animal from the array.<br />
-2\.8 Again log your new array.<br />
-2\.9 Now if unlike Jim, you don't like *'meerkat'* and you want to delete it from the array, but you don't know the position or the `index` of the item in the array, how can you find it?<br />
-2\.10 Log the index of *'meerkat'*. Add a message so it says: *'The item you are looking for is at index: '* (here you should show the index of the item).<br />
+**2.1** Add a statement that adds Mauro's favorite animal *'turtle'* to the existing array.<br />
+**2.2** Log your new array!<br />
+**2.3** Now add Jim's favorite animal to the array, it's *'meerkat'*, but make sure it will be placed after *'blowfish'* and before *'capricorn'*.<br />
+**2.4** Write a `console.log` statement that explains in words _you think_ the new value of the array is.<br />
+**2.5** Log your new array!<br />
+**2.6** Log the length of the array, add a message: *'The array has a length of: '* (here you should show the length of the array).<br />
+**2.7** Jason does not like *'giraffe'*, delete this animal from the array.<br />
+**2.8** Again log your new array.<br />
+**2.9** Now if unlike Jim, you don't like *'meerkat'* and you want to delete it from the array, but you don't know the position or the `index` of the item in the array, how can you find it?<br />
+**2.10** Log the index of *'meerkat'*. Add a message so it says: *'The item you are looking for is at index: '* (here you should show the index of the item).<br />
+
+### Exercise 3 - Maartje's work (`maartje.js`)
+
+Below you see a very interesting small insight in Maartje's work (note: the durations are in minutes):
+
+```js
+const monday = [
+  {
+    name: 'Write a summary HTML/CSS',
+    duration: 180
+  },
+  {
+    name: 'Some web development',
+    duration: 120
+  },
+  {
+    name: 'Fix homework for class10',
+    duration: 20
+  },
+  {
+    name: 'Talk to a lot of people',
+    duration: 200
+  }
+];
+
+const tuesday = [
+  {
+    name: 'Keep writing summary',
+    duration: 240
+  },
+  {
+    name: 'Some more web development',
+    duration: 180
+  },
+  {
+    name: 'Staring out the window',
+    duration: 10
+  },
+  {
+    name: 'Talk to a lot of people',
+    duration: 200
+  },
+  {
+    name: 'Look at application assignments new students',
+    duration: 40
+  }
+];
+
+const tasks = monday.concat(tuesday);
+```
+
+Your assignment is to compute how much Maartje has earned by completing these tasks. For some unexplained reason, Maartje only gets paid for tasks that take two hours or more. We don't know what Maartje earns per hour (she won't tell us), so just make up a reasonable number yourself (by the way, she gets paid in Euros).
+
+When you have computed Maartje's earnings, use a `console.log` statement to print the message (replace the amount by the result of your computation):
+
+```
+Maartje has earned €123.45
+```
+
+You need to do some research on how you can format a number so that it prints with two decimal places.
+
+In addition to writing code, compute the expected result manually. Use a spreadsheet or pen and paper to compute Maartje's earnings and check it against the result from your code.
 
 ## More JavaScript :tada:
 
-1. Create a function that takes 3 arguments and returns the sum of the these arguments.
+_Deadline Wednesday_
 
-2. Create a function named `colorCar` that receives a color, and prints out, *'a red car'* for example.
+For each numbered assignment in this list create a separate file, for instance `1-more.js`, `2-more.js`, etc. in the `week3` folder. Remember to start each file with `'use strict';`.
 
-3. Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
+**1.** Create a function that takes 3 arguments and returns the sum of the these arguments. Test your function by calling it with three numbers and using `console.log` to print the result. For example:
 
-4. Create a function named `vehicleType` that receives a color, and a code, 1 for car, 2 for motorbike. And prints *'a blue motorbike'* for example when called as `vehicleType("blue", 2)`
+```js
+// fill in the dots
+function sum(...) {
+    return ...;
+}
 
-5. Can you write the following without the `if` statement, but with just as a single line with `console.log(...);`?
+const result = sum(...);
+console.log(result);
 
-    ```js
-    if (3 === 3) {
-        console.log("yes")
-    } else {
-        console.log("no")
+// or, in a single line:
+// console.log(sum(...));
+```
+
+**2.** Create a function named `colorCar` that receives a `color` argument. It should returns a string, for example`'a red car'` when called with `'red'` as argument. Test your function by calling it, passing a color name as a string and using `console.log` to print the result.
+
+**3.** Create a function called `printObject` that takes an object as a parameter and prints out all of its properties and values.
+
+Next, create an object that contains some properties with values. Now call your function and passing the object just created as an argument to test your function. Your function should not make any assumptions about the actual object passed. Instead, you should find a way to obtain the property keys and their values programmatically.
+
+For example:
+
+```js
+function printObject(obj) {
+  // Add your code here
+}
+
+const person = {
+  firstName: 'Maartje',
+  lastName: 'Kruijt',
+  city: 'Amsterdam'
+};
+
+printObject(person);
+```
+
+Output:
+
+```
+firstName = Maartje
+lastName = Kruijt
+city = Amsterdam
+```
+
+**4.** Create a function named `vehicleType` that receives a `color`, and a `code`, 1 for 'car', 2 for 'motorbike'. Any code other than 1 or 2 should produce 'unknown vehicle'. Your function should return a string, for example `'a blue motorbike'` when called as `vehicleType('blue', 2)`. Try your function with different values for `color` and `code`. Use a `console.log` to print out each result.
+
+**5.** Can you write the following without the `if` statement, but with just as a single line with `console.log(...);`?
+
+```js
+if (3 === 3) {
+  console.log('yes');
+} else {
+  console.log('no');
+}
+```
+
+>Note: If you see a warning from ESLint `Unexpected constant condition.` you can safely ignore it for this particular assignment. But otherwise you should always correct errors and warning flagged by ESLint.
+
+**6.** Copy the `vehicleType` function from assignment **4**, but modify it so that it takes a third parameter called `age`, so that: 
+
+```js
+console.log(vehicleType('blue', 1, 5));
+```
+prints `'a blue used car'`.
+
+Note: For this assignment, a car that is at most one year old is still considered `'new'`.
+
+**7.** Make a array of vehicles, you can add `'car', 'motorbike'`, `'caravan'`, `'bike'`, or more.
+
+Copy the `vehicleType` function from assignment **6** and modify it to use the array just created. When your function is called like this:
+
+```js
+console.log(vehicleType('green', 3, 1));
+```
+
+...it should print `'a green new caravan'`.
+
+If `code` is something other than a number between 1 and the length of your vehicle array then the vehicle should be reported as `unknown vehicle`. (Try it!)
+
+**8.** Create a function called `advertisement` that takes an array of vehicle names as an argument and returns a corresponding advertisement text string, for example:
+
+```js
+function advertisement(vehicleNames) {
+  // Add your code here
+}
+
+const vehicles = [...];
+
+const text = advertisement(vehicles);
+console.log(text);
+```
+
+Example output:
+
+```
+Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.
+```
+
+Copy the array from assignment **7** and call the function you just created, passing the array as an argument. Use `console.log` to print the result.
+
+> Hint, the output should be correct English with all the punctuation in place (that's the challenge). So plurals for the vehicle types, commas followed by a single space, the word and to replace the final comma and closed off by a period.
+
+**9.** Copy the code from assignment **7** and add another vehicle to the array. Confirm that your advertisement function now includes the new vehicle in its advertisement text.
+
+**10.** Create a single `.js` file containing the following:
+
+- Declare a variable and initialize it with an empty object. (Just to show that you know what an empty object looks like.)
+- Create an array of teachers that you have had so far for the different modules. Each element of the array should be an object that contain properties for the first name and the last name of the teacher.
+- Add a property to the objects you just created that contains and array of languages that they have taught you.
+
+**11.** Write some code to test two arrays for equality using `==` and `===`. Test the following:
+
+```js
+const x = [1, 2, 3];
+const y = [1, 2, 3];
+const z = y;
+```
+What do you think will be the result of `x == y`, `x === y` and `z === y` and `z === x`? Prove it!
+
+> Don't cheat! Seriously - try it first.
+
+Note: If you see an ESLint error `Expected '===' and instead saw '=='.` then you can ignore it for this assignment.
+
+Check out the code below (no need to include this code in your homework file, just try and understand the code and play with it, e.g. make a change to one of the arrays or add a value):
+
+```js
+'use strict';
+
+const array1 = [4, 8, 9, 10];
+const array2 = [4, 8, 9, 10];
+
+function equal(a, b) {
+  let same = a.length === b.length;
+  if (same) {
+    const len = a.length;
+    for (let i = 0; same && i < len; i++) {
+      if (a[i] !== b[i]) {
+        same = false;
+      }
     }
-    ```
+  }
 
-6. Create a function called `vehicle`, like before, but takes another parameter called `age`, so that `vehicle("blue", 1, 5)` prints *'a blue used car'*
+  return same;
+}
 
-7. Make a list of vehicles, you can add `"motorbike"`, `"caravan"`, `"bike"`, or more.
+console.log(equal(array1, array2));
+```
 
-8. How do you get the third element from that list?
-
-9. Change the function `vehicle` to use the list of question 7. So that `vehicle("green", 3, 1)` prints "a green new bike".
-
-10. Use the list of vehicles to write an advertisement. So that it prints something like: `"Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."`. (Hint: use a `for` loop.)
-
-    > Hint, the output should be correct English with all the punctuation in place (that's the challenge). So plurals for the vehicle types, commas followed by a single space, the word and to replace the final comma and closed off by a period.
-
-11. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
-
-12. Create an empty object.
-
-13. Create an object that contains the teachers that you have had so far for the different modules.
-
-14. Add a property to the object you just created that contains the languages that they have taught you.
-
-15. Write some code to test two arrays for equality using `==` and `===`. Test the following:
-
-    ```js
-        let x = [1,2,3];
-        let y = [1,2,3];
-        let z = y;
-    ```
-
-    What do you think will happen with `x == y`, `x === y` and `z == y` and `z == x`? Prove it!
-
-    > Don't cheat! Seriously - try it first.
+More insights from this [Stack Overflow question](http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript).
 
 
-    Check out this [Fiddle](http://jsfiddle.net/jimschubert/85M4z/). You need to open your browser’s Developer Tools to see the console output. Press the Run button in the upper right corner to run the code.
+**12.** Copy this code into and run it.
 
-    More insights from this [Stack Overflow question](http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript).
+```js
+'use strict';
+const o1 = { foo: 'bar' };
+const o2 = { foo: 'bar' };
+const o3 = o2;
 
+console.log('o1', o1, 'o2', o2, 'o3', o3);
 
-16. Take a look at the following code:
+o1.foo = 'baz';
+console.log('o1', o1, 'o2', o2, 'o3', o3);
 
-    ```js
-         let o1 = { foo: 'bar' };
-         let o2 = { foo: 'bar' };
-         let o3 = o2;
+o2.foo = 'hyf';
+console.log('o1', o1, 'o2', o2, 'o3', o3);
+```
 
-    ```
+- Explain why making a change to `o1` does **_not_** affect `o3`.
+- Explain why making a changes `o2` **_does_** affect `o3`.
 
-    Show that changing `o2` changes `o3` (or not) and changing `o1` changes `o3`(or not).
+Add your explanations in a JavaScript comment.
 
-    Does the order that you assign (`o3 = o2` or `o2 = o3`) matter?
+**13.** What will be the value of `result`? (And why?) Add your explanation in a JavaScript comment.
 
-17. What does the following code return? (And why?)
-
-    ```js
-    let bar = 42;
-    typeof typeof bar;
-    ```
-
-
-> ‘Coerce' means to try to change - so coercing `var x = '6'` to number means trying to change the type to number temporarily.
+```js
+const bar = 42;
+const result = typeof typeof bar;
+```
 
 ## Step 7: **Finish basic freeCodeCamp challenges:**
 
@@ -195,10 +363,24 @@ _Deadline Sunday morning_
 
 Go through the reading material in the [README.md](./../../../../JavaScript2/tree/master/Week1) to prepare for your next class
 
+---
+
+## How to hand in your homework:
+
+Go over your homework one last time:
+
+- Does every file run without errors and with the correct results when you run them with Node?
+- Does every file start with `'use strict';`?
+- Have you used `const` and `let` and avoided `var`?
+- Do the variable, function and argument names you created follow the [Naming Conventions](../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
+- Is your code well-formatted (see [Code Formatting](../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
+
+If the answer is 'yes' to all preceding questions you are ready to:
+
 ```
-How to hand in your homework:
-• Upload your homework in your "hyf-javascript1" Github repository. Make sure to create a new folder "week2" first.
-• Upload your homework files inside the week2 folder and write a description for this “commit”.
-• Your hyf-javascript1/week2 should now contain all your homework files.
-• Place the link to your repository folder in Trello.
+git add .
+git commit -m "adds homework week 3"
+git push
 ```
+
+Finally, add a link to your repository folder in Trello.

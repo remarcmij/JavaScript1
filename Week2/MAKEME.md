@@ -31,7 +31,38 @@ Provide feedback on the Git assignments (week 1) of one of your fellow students.
 
 _Deadline Thursday_
 
-> For all the following exercises create a new `.js` file. Try to find a proper name for each file or make a small comment about what it does inside for future reference.
+### Preparation
+
+- Open your `hyf-javascript1` folder with VSCode.
+- Create a subfolder named `week1`.
+- For each assignment, create a separate file in the `week1` folder, e.g. `step1.js`, `step2.js` etc.
+- Start each file with the line `'use strict;`
+- Follow the assignment instructions carefully to write your code.
+- Ask clarifications on slack if required.
+- Write one file at a time and when done, run your code and make sure that it produces the expected results. To run your code, open a terminal/command window in VSCode and change the current directory to the `week1` folder:
+    ```
+    cd week1
+    ```
+
+    Next, type:
+    
+    ```
+    node step1
+    ```
+
+    Replace `step1` with the actual name of your file, you do not need to type the `.js` extension.
+
+- If you have tried hard but are still not able to make your code run as expected, ask for help on slack. 
+- When you have completed the homework, commit your changes and push them to GitHub:
+    ```
+    git add .
+    git commit -m "added homework week 1"
+    git push
+    ```
+
+- Finally, add a link to your repo on Trello.
+
+### Assignments
 
 1\. Write a `console.log` statement saying "Hello World!" for each language that you know.
 
@@ -155,6 +186,8 @@ _Deadline Saturday_
 
 On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
 
+> Note that, unfortunately, the freeCodeCamp challenges leave you no choice but to use the older `var` keyword, instead of the more modern `const` and `let` keywords that you should use for the other homework.
+
 ## Step 5: Read before next lecture
 
 _Deadline Sunday morning_
@@ -162,12 +195,8 @@ _Deadline Sunday morning_
 Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
 
 ### How to hand in Homework:
-```
-• Create a new repository "hyf-javascript1". Also create a new folder "week1" inside this repository.
-• Upload your homework files inside the week1 folder and write a description for this “commit”.
-• Your hyf-javascript1/week1 should now contain all your homework files.
-• Place the link to your repository folder in Trello.
-```
+
+Refer to the **Preparation** section.
 
 ### Hint
 If you solve the FreeCodeCamp challenges and they are new concepts to you and you would like to take a look at them later on in the program, Copy your answers from FCC in a `.js` file and upload them to Github in a repository for future reference. In this way you build your own little documentation, if you look back at them first try to understand what it does before you run them.
