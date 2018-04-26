@@ -26,18 +26,16 @@ _Deadline Wednesday_
 
 Git homework for this week:
 
-Pair up with another student in your class. The homework requires two people to work together. Let's call them admin and user.
-
-1. admin creates a new repository on github called “animals” (without quotes).
-2. admin adds a file called “zoo.txt” with some animals generally found in a zoo.
-3. admin commits and pushes his changes (in master branch).
-4. admin adds user as a collaborator (find out how to add a collaborator to a git repository).
-5. user clones the repository from admin (find out how to clone a repository. Note that `git init` is not required when you clone a repository).
-6. user makes a new branch called user-dev.
-7. user adds another file called “pets.txt” with some animals generally found in a home.
-8. user commits and pushes his branch to remote.
-9. admin pulls the branch crated by user (find out how to pull changes from a repository).
-10. admin submits the link to his github repository (named "animals"), where Unmesh should be able to see the collaborator’s (i.e. user’s) branch along with his commits.
+1. Pair up with another student in your class. The homework requires two people to work together. Let us call them admin and user.
+2. admin creates a new repository on github called "animals" (without quotes).
+3. admin adds a file called "zoo.txt" with some animal generally found in a zoo.
+4. admin commits and pushes his changes (in master branch)
+5. admin adds user as a collaborator (find out how to add a collaborator to a git repository)
+6. user clones a repository from admin (find out how to clone a repository. Note that `git init` is not required when you clone a repository)
+7. user makes a new branch called user-dev
+8. user adds another file called "pets.txt" with some animals generally found in a home.
+9. user commits and pushes his branch to remote
+10. admin pulls the branch crated by user (find out  how to pull changes from the repository)
 
 Note:
 
