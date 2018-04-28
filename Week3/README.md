@@ -39,7 +39,9 @@ Please go through these chapters of _Eloquent JavaScript_ to prepare for your ne
     * _Rest parameters_
     * _Destructuring_
     * _Exercises_
+
 #### Git work flow
+
 - Check out this video of Daan to see how we use Git Workflow to hand in Homework (from now on): https://www.youtube.com/watch?v=-o0yomUVVpU&index=2&list=PLVYDhqbgYpYUGxRdtQdYVE5Q8h3bt6SIA
 
 ### Review

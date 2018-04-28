@@ -379,7 +379,7 @@ If the answer is 'yes' to all preceding questions you are ready to:
 
 ```
 git add .
-git commit -m "adds homework week 3"
+git commit -m "added homework week 3"
 git push
 ```
 

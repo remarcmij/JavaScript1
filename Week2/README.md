@@ -10,8 +10,14 @@ In week two we will discuss the following topics:
 ```
 
 ## How to get started
+
 1. Download and install the *LTS* version of NodeJS - https://nodejs.org/en/download/
-To test that it was installed and running properly, go to your terminal and run the command: node -v You should get the node version printed on your terminal, for example, v8.9.1
+To test that it was installed and running properly, go to your terminal and run the command:
+    ```
+    node -v 
+    ```
+    You should get the node version printed on your terminal, for example, `v8.9.1`
+
 2. Please check the [VSCode Tips](https://github.com/HackYourFuture/fundamentals/tree/master/VSCodeTips/README.md) to ensure that VSCode is installed and configured correctly.
 
 ## Here are resources that we like you to read as a preparation for the coming lecture:
@@ -31,10 +37,10 @@ Only watch the below chapters:
 
 :star: You can also already go through the topics of the upcoming lecture. :star:
 
-- [Variables (var, let, const)](./../../../../fundamentals/blob/master/fundamentals/variables.md)<br>
-- [Basic Data types (Strings, Numbers, Arrays, Booleans)](./../../../../fundamentals/blob/master/fundamentals/values.md)<br>
-- [Operators](./../../../../fundamentals/blob/master/fundamentals/operators.md)<br>
-- [Naming conventions](./../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
+- [Variables (var, let, const)](../../../../fundamentals/blob/master/fundamentals/variables.md)<br>
+- [Basic Data types (Strings, Numbers, Arrays, Booleans)](../../../../fundamentals/blob/master/fundamentals/values.md)<br>
+- [Operators](../../../../fundamentals/blob/master/fundamentals/operators.md)<br>
+- [Naming conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)
 
 ## Optional resources
 
