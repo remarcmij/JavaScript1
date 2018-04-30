@@ -40,6 +40,8 @@ Please go through these chapters of _Eloquent JavaScript_ to prepare for your ne
     * _Destructuring_
     * _Exercises_
 
+- Here is a great [video on pure functions and side effects](https://youtu.be/dZ41D6LDSBg) (6:54 mins).
+
 #### Git work flow
 
 - Check out this video of Daan to see how we use Git Workflow to hand in Homework (from now on): https://www.youtube.com/watch?v=-o0yomUVVpU&index=2&list=PLVYDhqbgYpYUGxRdtQdYVE5Q8h3bt6SIA
